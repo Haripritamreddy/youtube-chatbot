@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .chat-container {
+    max-width: 800px;  /* Increase the width of the chat container */
+    margin: auto;
+  }
+  
+  #chat-output {
+    height: 400px;  /* Increase the height of the chat output */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    overflow: hidden;  /* Ensure the message content doesn't overflow */
+  }
+  
+  .user-message {
+    text-align: right;
+  }
+  
+  .user-bubble {
+    background-color: #3498db;  /* Blue background for user messages */
+    color: #fff;  /* White text color */
+    padding: 8px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 70%;  /* Limit the width of the bubble */
+  }
+  
+  .bot-message {
+    text-align: left;
+  }
+  
+  .bot-bubble {
+    background-color: #ddd;  /* Grey background for bot messages */
+    color: #000;  /* Black text color */
+    padding: 8px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 70%;  /* Limit the width of the bubble */
+  }
+  
+  .chat-input {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  #user-input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .send-btn {
+    padding: 5px;
+    cursor: pointer;
+    background-color: #3498db;  /* Blue color for the send button */
+    color: #fff;  /* White text color */
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  

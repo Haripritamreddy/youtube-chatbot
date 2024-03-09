@@ -1,0 +1,7 @@
+flask
+youtube-transcript-api
+langchain_google_genai
+langchain
+requests
+"unstructured[all-docs]"
+chroma

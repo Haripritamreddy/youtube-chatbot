@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "OpenAI YouTube Chatbot",
+    "version": "1.0",
+    "description": "A chatbot that fetches YouTube transcripts and generates responses using OpenAI's API",
+    "icons": {
+      "48": "icon.png"
+    },
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "tabs",
+      "https://youtubetranscript.com/*",
+      "https://api.naga.ac/*",
+      "https://api.openai.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://*.youtube.com/*"],
+        "js": ["popup.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      "popup.html",
+      "popup.js"
+    ],
+    "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com; object-src 'self';" 
+  }
