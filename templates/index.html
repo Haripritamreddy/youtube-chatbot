@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Transcript Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css', _external=True) }}">
+</head>
+<body>
+    <h1>YouTube Transcript Chatbot</h1>
+    <form method="post">
+        <label for="youtube_url">Enter YouTube URL:</label>
+        <input type="text" id="youtube_url" name="youtube_url" required>
+        <button type="submit">Submit</button>
+    </form>
+    <footer>Made by Hari Pritam</footer>
+</body>
+</html>

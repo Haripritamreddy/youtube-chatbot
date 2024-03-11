@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='chatbot.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-history">
+            {% if conversation %}
+                {% for message, response in conversation %}
+                    <div class="message-container">
+                        <div class="user-message">
+                            <p>You: {{ message }}</p>
+                        </div>
+                        <div class="ai-response">
+                            <p>AI: {{ response }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <form method="post">
+            <input type="text" name="user_message" placeholder="Type your message" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
