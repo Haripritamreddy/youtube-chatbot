@@ -26,10 +26,11 @@ The Chrome extension provides a user interface for interacting with the chatbot.
 
 ### Extension Usage
 
-1. Navigate to a YouTube video.
-2. Click the extension icon in the Chrome toolbar.
-3. Type your message in the input field and press Enter or click the send button.
-4. The chatbot will fetch the relevant part of the transcript and generate a response based on your message.
+1. Run `server.py` file in your terminal.
+2. Navigate to a YouTube video.
+3. Click the extension icon in the Chrome toolbar.
+4. Type your message in the input field and press Enter or click the send button.
+5. The chatbot will fetch the relevant part of the transcript and generate a response based on your message.
 
 ## Standalone CLI Chat
 
