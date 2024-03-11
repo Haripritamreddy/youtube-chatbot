@@ -27,7 +27,7 @@ The Chrome extension provides a user interface for interacting with the chatbot.
 
 1. Open Google Chrome and go to `chrome://extensions/`.
 2. Enable "Developer mode" by toggling the switch in the top-right corner.
-3. Click "Load unpacked" and select the directory containing the extension files (manifest.json, popup.html, popup.js, popup.css, and server.py).
+3. Click "Load unpacked" and select the directory containing the extension files (`icon.png`, `manifest.json`, `popup.html`, `popup.js`, `popup.css`, and `server.py`).
 
 
 ### Flask Server
